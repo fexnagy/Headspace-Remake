@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation and Sleep Made Simple - Headspace</title>
+    <link data-react-helmet="true" href="img/favicon.ico" rel="icon" type="image/ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+</head>
+
+<body class="overflow-x-hidden select-none">
+    <div class="text-center py-4 lg:px-4 hover:cursor-pointer" id="alert">
+        <div class="items-center text-white leading-none-full flex lg:inline-flex" role="alert">
+            <span class="font-semibold mr-2 flex-auto">Get 14 days free now</span>
+        </div>
+    </div>
+    <nav class="bg-white">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:mx-12">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/bars-3
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x-mark
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center mr-14">
+                        <img class="block h-8 w-auto lg:hidden" src="img/logo.svg" alt="Headspace">
+                        <img class="hidden h-8 w-auto lg:block" src="img/logo.svg" alt="Headspace">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4 items-center">
+                            <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium"
+                                aria-current="page">Articles
+                            </a>
+                            <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                                Meditation
+                            </a>
+                            <a href="#" class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                                Sleep
+                            </a>
+                            <a href="#" class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                                Stress
+                            </a>
+                            <a href="#" class="text-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                                Mindfulness
+                            </a>
+                            <div class="pl-20">
+                                <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                                    Plans
+                                </a>
+                                <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                                    Work
+                                </a>
+                                <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                                    About
+                                </a>
+                                <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                                    Help
+                                </a>
+                                <a href="#" class="text-gray-600 px-3 py-2 rounded-md text-sm font-medium">
+                                    Login
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button"
+                    class="mt-1 text-white hover:bg-blue-800 focus:outline-none font-medium rounded-full text-md px-6 py-3 text-center mr-2 mb-2">Try
+                    for free
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    aria-current="page">Article</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Meditation</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sleep</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Stress</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Mindfulness</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="text-center text-gray-800 py-20 px-6">
+            <h1 class="text-6xl font-bold mt-4 mb-12">Be <span class="hover:underline hover:cursor-pointer"
+                    id="random">kind</span> to your<br>mind</h1>
+            <h3 class="text-2xl font-medium mb-10"><span id="confirm">Select</span> a plan:</h3>
+        </div>
+        <img class="absolute -z-10" src="img/hero_left.webp" alt="Meditation playlist" id="hero_left">
+        <img class="absolute -z-10" src="img/hero_right.webp" alt="Meditation playlist" id="hero_right">
+        <div class="flex justify-center">
+            <div class="columns">
+                <div class="box-content p-6 bg-warning mb-5 -mt-20 rounded-xl hover:cursor-pointer relative" id="box">
+                    <div class="absolute -top-3 left-8" id="value">
+                        <p class="text-white text-xs p-1 px-3">Best value</p>
+                    </div>
+                    <p class="text-xs">Annual - billed at €57.99 EUR/yr</p>
+                    <p class="text-2xl font-bold">14 days free</p>
+                    <p class="text-lg">€4.83 EUR/month</p>
+                    <span class="material-symbols-outlined absolute right-5 flex bottom-10 text-4xl" id="a1">
+                        check_box
+                    </span>
+                </div>
+                <div class="box-content p-6 bg-warning rounded-xl hover:cursor-pointer relative" id="box2">
+                    <p class="text-xs">Monthly</p>
+                    <p class="text-2xl font-bold">7 days free</p>
+                    <p class="text-lg">€12.99 EUR/month</p>
+                    <span class="material-symbols-outlined  absolute right-5 flex bottom-10 text-4xl" id="a2">
+                        check_box_outline_blank
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="columns">
+                <p class=" text-xs font-medium text-gray-400 text-center flex justify-center mt-3" id="subtitle">
+                    After your free trial, the annual subscription is €57.99 EUR and automatically renews each year.
+                </p>
+                <p class=" text-xs font-medium text-gray-400 text-center flex justify-center" id="subtitle1">
+                    Are you a post-secondary or university student? Save 85%, with valid SheerID student verification,
+                    for our student plan.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <button type="button"
+                class="mt-6 text-white hover:bg-blue-800 focus:outline-none font-medium rounded-full text-md px-10 py-5 text-center mr-2 mb-2"
+                id="btn">
+                Try for free
+            </button>
+        </div>
+    </header>
+    <main class="bg-white mt-20 flex justify-center pt-20">
+        <div class="grid grid-rows-3 grid-flow-col gap-x-18 flex items-center">
+            <div class="row-span-2">
+                <h1 class="text-2xl font-medium pb-5">Find more joy</h1>
+                <p class="text-lg w-96">
+                    Catch your breath, relax your mind, and feel 14% less stressed in just 10 days.
+                </p>
+            </div>
+            <div class="row-span-2">
+                <h1 class="text-2xl font-medium pb-5">Get more goodnights</h1>
+                <p class="text-lg w-96">
+                    Put your mind to bed, wake up refreshed, and make good days your new normal.
+                </p>
+            </div>
+            <div class="row-span-2">
+                <h1 class="text-2xl font-medium pb-5">Make every day happier</h1>
+                <p class="text-lg w-96">
+                    Do it for yourself, and everyone you love. It only takes a few minutes to find some headspace.
+                </p>
+            </div>
+        </div>
+    </main>
+    <div class="bg-white">
+        <footer class="text-center text-gray-300 text-xs p-10 font-medium grid grid-rows-3 grid-flow-col px-72">
+            <div class="row-span-2 font-bold">
+                © 2022 Headspace Inc.
+            </div>
+            <div class="row-span-2">
+                <a class="hover:text-white hover:underline" href="#">Terms & conditions</a>
+            </div>
+            <div class="row-span-2">
+                <a class="hover:text-white hover:underline" href="#">Privacy policy</a>
+            </div>
+            <div class="row-span-2">
+                <a class="hover:text-white hover:underline" href="#">Cookie policy</a>
+            </div>
+            <div class="row-span-2">
+                <a class="hover:text-white hover:underline" href="#">CCPA notice</a>
+            </div>
+            <div class="row-span-2">
+                <a class="hover:text-white hover:underline" href="#">Security</a>
+            </div>
+            <div class="row-span-2">
+                <a class="hover:text-white hover:underline" href="#">Sitemap</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
